@@ -260,8 +260,9 @@
     padding-top: 20rem;
   }
   .button {
-    height: .5rem;
-    width: .5rem;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 25%;
   }
   .image-container p {
     font-size: x-small;
