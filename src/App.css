@@ -3,7 +3,6 @@
   overflow: hidden;
   font-family: 'Roboto', sans-serif;
 }
-
 .App {
   text-align: center;
   display: flex;
@@ -26,27 +25,10 @@
   color: darkslategray;
   margin-left: 2rem;
 }
-@media (max-width: 28rem) {
-  .App-header {
-    height: 35px;
-  }
-}
 .App-title {
   font-size: 1.5em;
   padding-left: 2rem;
   font-family: 'Roboto', sans-serif;
-}
-@media (max-width: 40rem) {
-  .App-title {
-    font-size: 1rem;
-    padding: 0;
-  }
-  #bad {
-    position: absolute;
-    transform: translate(calc(100% / 2), 35px);
-    color: white;
-    font-size: x-large;
-  }
 }
 .nav {
   letter-spacing: normal;
@@ -58,16 +40,6 @@
 .nav-item {
   margin-right: 1rem;
   letter-spacing: .05em;
-}
-@media (max-width: 40rem) {
-  .nav p {
-    font-size: .5rem;
-  }
-}
-@media (max-width: 40rem) {
-  .nav a {
-    font-size: .5rem;
-  }
 }
 .nav a {
   text-decoration: none;
@@ -84,7 +56,6 @@
 }
 .video {
   width: 100%;
-  /* border: none; */
   background: black;
 }
 .video a {
@@ -106,6 +77,13 @@
   width: 100%;
   border: none;
   margin: 0;
+}
+.gif {
+  display: none;
+  width: 85%;
+}
+#giftop {
+  width: 100%;
 }
 #boxed-video {
   background: white;
@@ -235,7 +213,38 @@
   text-decoration: line-through;
 }
 
+@media (max-width: 28rem) {
+  .App-header {
+    height: 35px;
+  }
+}
+
 @media (max-width: 40rem) {
+  .App-title {
+      font-size: 1rem;
+      padding: 0;
+    }
+    #bad {
+      position: absolute;
+      transform: translate(calc(100% / 2), 35px);
+      color: white;
+      font-size: x-large;
+    }
+  .nav p {
+      font-size: .5rem;
+    }
+  .nav a {
+      font-size: .5rem;
+    }
+  #video-long {
+    display: none;
+  }
+  #boxed {
+    display: none;
+  }
+  .gif {
+   display: inline-block; 
+  }
   .copy {
     height: 20rem;
   }
@@ -249,6 +258,10 @@
   }
   .copy-buttons {
     padding-top: 20rem;
+  }
+  .button {
+    height: .5rem;
+    width: .5rem;
   }
   .image-container p {
     font-size: x-small;
