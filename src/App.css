@@ -26,11 +26,27 @@
   color: darkslategray;
   margin-left: 2rem;
 }
-
+@media (max-width: 28rem) {
+  .App-header {
+    height: 35px;
+  }
+}
 .App-title {
   font-size: 1.5em;
   padding-left: 2rem;
   font-family: 'Roboto', sans-serif;
+}
+@media (max-width: 40rem) {
+  .App-title {
+    font-size: 1rem;
+    padding: 0;
+  }
+  #bad {
+    position: absolute;
+    transform: translate(calc(100% / 2), 35px);
+    color: white;
+    font-size: x-large;
+  }
 }
 .nav {
   letter-spacing: normal;
@@ -42,6 +58,16 @@
 .nav-item {
   margin-right: 1rem;
   letter-spacing: .05em;
+}
+@media (max-width: 40rem) {
+  .nav p {
+    font-size: .5rem;
+  }
+}
+@media (max-width: 40rem) {
+  .nav a {
+    font-size: .5rem;
+  }
 }
 .nav a {
   text-decoration: none;
@@ -158,6 +184,7 @@
 .button:hover {
   cursor: pointer;
 }
+
 .image-container {
   display: flex;
   flex-direction: row;
@@ -185,7 +212,7 @@
 #img-right {
   width: 90%;
   align-self: flex-end;
-  height: 700px;
+  height: auto;
 }
 .bottom-line {
   width: 87%;
@@ -195,7 +222,7 @@
 }
 .footer {
   padding-top: 2rem;
-  height: 10rem;
+  height: 5rem;
   width: 100%;
   background-color: #F8F8F8;
 }
@@ -206,4 +233,30 @@
 }
 .footer a:hover {
   text-decoration: line-through;
+}
+
+@media (max-width: 40rem) {
+  .copy {
+    height: 20rem;
+  }
+  .copy-text-show {
+    font-size: small;
+    line-height: 30px;
+  }
+  .copy-text-hide {
+    font-size: small;
+    line-height: 30px;
+  }
+  .copy-buttons {
+    padding-top: 20rem;
+  }
+  .image-container p {
+    font-size: x-small;
+  }
+  #img-right {
+    height: auto;
+  }
+  .footer {
+    height: 5rem;
+  }
 }
