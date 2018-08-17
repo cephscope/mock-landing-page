@@ -38,7 +38,7 @@ class App extends React.Component {
         <Header />
         <div className="video">
           <video id="video-long" src="./robott.mp4" autoPlay loop muted />
-          <img className="gif" id="giftop" src="./robott.gif"/>
+          <img className="gif" id="giftop" src="./robott.gif" alt="droids"/>
         </div>
         <CopyContainer
           selectedCopy={this.state.copy}
@@ -48,14 +48,14 @@ class App extends React.Component {
         />
         <div className="video" id="boxed-video">
           <video id="boxed" src="./roboto.mp4" autoPlay loop muted />
-          <img className="gif" src="./roboto.gif"/>
+          <img className="gif" src="./roboto.gif" alt="droids"/>
           <p>Model #451233548 meeting his creator</p>
           <a href="#">Start building your new droid</a>
         </div>
         <ImageContainer />
         <div className="video" id="end-video">
           <video id="boxed" src="./sophia.mp4" autoPlay loop muted />
-          <img className="gif" src="./sophia.gif" />
+          <img className="gif" src="./sophia.gif" alt="droids"/>
           <p>Model P-Sophia</p>
           <a href="#">Shop presets</a>
         </div>
