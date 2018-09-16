@@ -37,7 +37,7 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <div className="video">
-          <video id="video-long" src="./robott.mp4" autoPlay loop muted />
+          <video id="video-long" src="https://res.cloudinary.com/dnqc6pmtp/video/upload/v1537132089/robott.mp4" autoPlay loop muted />
           <img className="gif" id="giftop" src="./robott.gif" alt="droids"/>
         </div>
         <CopyContainer
@@ -47,14 +47,14 @@ class App extends React.Component {
           handleCopyScroll={this.handleCopyScroll}
         />
         <div className="video" id="boxed-video">
-          <video id="boxed" src="./roboto.mp4" autoPlay loop muted />
+          <video id="boxed" src="https://res.cloudinary.com/dnqc6pmtp/video/upload/v1537132465/landing-page/roboto.mp4" autoPlay loop muted />
           <img className="gif" src="./roboto.gif" alt="droids"/>
           <p>Model #451233548 meeting his creator</p>
           <a href="#">Start building your new droid</a>
         </div>
         <ImageContainer />
         <div className="video" id="end-video">
-          <video id="boxed" src="./sophia.mp4" autoPlay loop muted />
+          <video id="boxed" src="https://res.cloudinary.com/dnqc6pmtp/video/upload/v1537132561/landing-page/sophia.mp4" autoPlay loop muted />
           <img className="gif" src="./sophia.gif" alt="droids"/>
           <p>Model P-Sophia</p>
           <a href="#">Shop presets</a>
